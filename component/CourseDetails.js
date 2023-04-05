@@ -2,6 +2,7 @@ import { StyleSheet, Text, View, TouchableOpacity } from 'react-native'
 import React from 'react'
 
 const CourseDetails = (props) => {
+
   return (
     <View style={[styles.buttonContainer, {alignItems: 'center',}]}>
         <TouchableOpacity onPress={props.onPress} style={styles.buttonStyle}>

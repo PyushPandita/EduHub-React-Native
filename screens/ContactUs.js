@@ -64,7 +64,7 @@ const ContactUs = ({navigation}) => {
           onValueChange={() => setAgree(!agree)}
           color={agree ? '#4630EB' : undefined}
         />
-        <Text style={styles.wapperText}>I have read and agreed with the T&C*</Text>
+        <Text style={[styles.wapperText, {fontWeight: agree ? '600' : '100'}]}>I have read and agreed with the T&C*</Text>
       </View>
 
       <TouchableOpacity onPress={submit} style={[styles.buttonStyle, {
@@ -132,7 +132,7 @@ const styles = StyleSheet.create({
     marginLeft: 10,
     color: '#7d7d7d',
     fontSize: 18,
-    fontWeight: 'bold',
+    // fontWeight: 'bold',
     letterSpacing: 1,
   },
 
